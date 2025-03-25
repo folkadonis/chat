@@ -4,7 +4,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 st.title("Chatbot 🎬")
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        SystemMessage(content="Act like US president Trump")
+        SystemMessage(content="Act like jarvis from ironman")
     ]
 for message in st.session_state.messages:
     if isinstance(message, HumanMessage):
