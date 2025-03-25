@@ -6,7 +6,7 @@ OLLAMA_URL = os.getenv("OLLAMA_API_URL", "http://localhost:11434")
 st.title("Chatbot 🎬")
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        SystemMessage(content="Act like jarvis in ironman")
+        SystemMessage(content="Act like jarvis in ironman movie")
     ]
 for message in st.session_state.messages:
     if isinstance(message, HumanMessage):
