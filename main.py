@@ -1,9 +1,6 @@
 import streamlit as st
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
-import os
-
-port = int(os.getenv("PORT", 8501))
 st.title("Chatbot 🎬")
 if "messages" not in st.session_state:
     st.session_state.messages = [
