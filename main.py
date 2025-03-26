@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 import os
-OLLAMA_URL = os.getenv("OLLAMA_API_URL", "http://localhost:11434")
+OLLAMA_API_URL = "http://localhost:11434/api/chat"
 st.title("Chatbot 🎬")
 if "messages" not in st.session_state:
     st.session_state.messages = [
